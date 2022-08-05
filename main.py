@@ -1,0 +1,51 @@
+from tkinter import *
+
+root = Tk()
+root.config(bg="grey")
+root.geometry("1000x600+100+50")
+root.title("Employee Payment System")
+
+bluebutton = Button(root, text="Employee Payment Management System", fg="black", bg="grey", font="ar, 20 bold").place(x=200, y=30)
+
+frame_details = Frame(root, bg="blue")
+frame_details.place(x=70, y=100, width=850, height=300)
+
+fullname = Label(frame_details, text="Full Name", bg="blue", fg="white", font="ar 15 bold").place(x=30, y=20)
+company_agency = Label(frame_details, text="Company / Agency", bg="blue", fg="white", font="ar 15 bold").place(x=30, y=60)
+h_worked = Label(frame_details, text="Hours worked", bg="blue", fg="white", font="ar 15 bold").place(x=30, y=100)
+tax = Label(frame_details, text="Tax", bg="blue", fg="white", font="ar 15 bold").place(x=30, y=140)
+gross_pay = Label(frame_details, text="Gross Pay", bg="blue", fg="white", font="ar 15 bold").place(x=30, y=180)
+
+ef= Entry(frame_details)
+ef.place(x=230, y=20)
+ec= Entry(frame_details)
+ec.place(x=230, y=60)
+eh= Entry(frame_details)
+eh.place(x=230, y=100)
+et= Entry(frame_details)
+et.place(x=230, y=140)
+eg= Entry(frame_details)
+eg.place(x=230, y=180)
+
+home_address = Label(frame_details, text="Home Address", bg="blue", fg="white", font="ar 15 bold").place(x=400, y=20)
+phone_number = Label(frame_details, text="Phone Number", bg="blue", fg="white", font="ar 15 bold").place(x=400, y=60)
+hourly_rate = Label(frame_details, text="Hourly Rate", bg="blue", fg="white", font="ar 15 bold").place(x=400, y=100)
+overtime = Label(frame_details, text="Over Time", bg="blue", fg="white", font="ar 15 bold").place(x=400, y=140)
+net_pay = Label(frame_details, text="Net Pay", bg="blue", fg="white", font="ar 15 bold").place(x=400, y=180)
+
+ef= Entry(frame_details)
+ef.place(x=600, y=20)
+ec= Entry(frame_details)
+ec.place(x=600, y=60)
+eh= Entry(frame_details)
+eh.place(x=600, y=100)
+et= Entry(frame_details)
+et.place(x=600, y=140)
+eg= Entry(frame_details)
+eg.place(x=600, y=180)
+
+weekly_salary= Button(frame_details, text="Weekly Salary", fg="black", bg="grey", font="ar 15 bold",padx=40, pady=10, relief="raised").place(x=50, y=220)
+reset= Button(frame_details, text="Reset", fg="black", bg="grey",font="ar 15 bold",padx=30, pady=10, relief="raised").place(x=278,y=220)
+view_pay_slip= Button(frame_details, text="View Pay Slip", fg="black", bg="grey",font="ar 15 bold",padx=30, pady=10, relief="raised").place(x=407, y=220)
+exit_system= Button(frame_details, text="Exit System", fg="black", bg="grey",font="ar 15 bold",padx=30, pady=10, relief="raised").place(x=608, y=220)
+root.mainloop()
